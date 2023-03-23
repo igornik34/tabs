@@ -13,11 +13,7 @@ const addTabs = (title, description, array) => {
     title: title,
     description: description,
   };
-  if (array.length > 7) {
-    alert("Слишком много вкладок!");
-  } else {
-    array.push(tab);
-  }
+  array.push(tab);
 };
 
 const isNotHaveTab = (title, list) => {
@@ -125,8 +121,6 @@ listTabs.addEventListener("click", (e) => {
         arrTabs,
         tabId ? tabId : target.parentElement.getAttribute("id")
       );
-      console.log(tabId);
     }
   }
-  console.log(target);
 });
